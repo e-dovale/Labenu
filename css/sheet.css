@@ -1,8 +1,11 @@
+
+/* Reset nas margens da página */
 body{
     margin: 0;
     padding: 0;
     background-color: #d8d8d8;
-    }
+}
+
 
 .topo h1{
     background-color: #cd4d00;
@@ -12,16 +15,21 @@ body{
     text-align: center;
     color: #fff;
     font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Heebo', sans-serif;
+
 }
 
 .corpo {
     margin:0;
     padding: 10px;
     background-color: #595f96;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    
 }
 #imgLogo{
-    width: 250px;
+    width: 275px;
     max-width: 100%;
     height: auto;
     text-align: center;
@@ -32,12 +40,8 @@ figure{
     padding: 15px;
     margin: 0;
 }
-.corpo {
-    color: #fff;
-    font-style: italic;
-    font-family: 'Roboto', sans-serif;
-}
 
+/* Blocos definidos para não "quebrar" */
 .blocos {
 display: flex;
 flex-wrap: nowrap;
@@ -52,12 +56,9 @@ align-items: center;
     height: 130px;
     justify-content: center;
     align-items: center;
-
-
     font-size: 25px;
     font-weight: bold; 
     text-align: center;
-    
 }
 
 .bloco1{
@@ -82,10 +83,9 @@ align-items: center;
 
 .rodape{
     text-align: center;
-    margin: 0;
-    border: 0;
-    padding: 30px;
-
+    /* margin: 0;
+    border: 0; */
+    padding-top: 30px;
 }
 
 input[type=text]{
@@ -95,7 +95,7 @@ input[type=text]{
     margin-right: -5px;  
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-  }
+}
 
   input[type=submit] {
     width: 6%;
@@ -107,17 +107,20 @@ input[type=text]{
     cursor: pointer;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-  } 
+} 
 
-  #divmsg{
+/* Exibe as mensagens de boas vindas */
+  #exibemsg{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: bold;
-  }
+    margin: 0;
+    padding-top: 10px;
+}
 
+  /* OS blocos são quebrados a partir das resoluções abaixo de 500px, inclusive do Iphone X (375px) */
+  @media (max-width: 500px){
 
-  /* Iphone X 375px */
-  @media (max-width: 600px){
 .blocos{
 display: flex;
 flex-wrap: wrap;
@@ -132,7 +135,7 @@ flex-wrap: wrap;
         width: initial;
         padding: 10px;
     }
-  }
+}
 
 
 
