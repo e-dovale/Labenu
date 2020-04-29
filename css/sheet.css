@@ -107,6 +107,8 @@ input[type=text]{
     cursor: pointer;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+
+    
 } 
 
 /* Exibe as mensagens de boas vindas */
@@ -118,12 +120,22 @@ input[type=text]{
     padding-top: 10px;
 }
 
-  /* OS blocos são quebrados a partir das resoluções abaixo de 500px, inclusive do Iphone X (375px) */
+/* OS blocos são quebrados a partir das resoluções abaixo de 500px, inclusive do Iphone X (375px) */
   @media (max-width: 500px){
 
 .blocos{
 display: flex;
 flex-wrap: wrap;
+}
+
+.bloco1{
+    /* margin-left: 0; */
+}
+.bloco2{
+    /* margin-right: 0; */
+}
+.bloco3{
+    margin-top: 30px;
 }
 
 .bloco3, .bloco2, .bloco1{
@@ -136,7 +148,3 @@ flex-wrap: wrap;
         padding: 10px;
     }
 }
-
-
-
-  
